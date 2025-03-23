@@ -71,7 +71,7 @@
                 <table class="table table-striped table-hover table-bordered" id="employeeTable">
                     <thead class="table-dark">
                         <tr>
-                            <th width="50px">ID</th>
+                            <th width="120px">ID Karyawan</th>
                             <th>Nama</th>
                             <th>Tanggal Masuk Kerja</th>
                             <th>Usia</th>
@@ -79,15 +79,28 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (var item in Model)
+                        @if (Model.Any())
                         {
-                            <tr data-id="@item.Id">
-                                <td>@item.Id</td>
-                                <td>@item.Name</td>
-                                <td>@item.JoinDate.ToString("dd MMM yyyy")</td>
-                                <td>@item.Age</td>
-                                <td class="text-center">
-                                    <input type="radio" name="selectedEmployee" class="form-check-input select-employee">
+                            @foreach (var item in Model)
+                            {
+                                <tr data-id="@item.Id">
+                                    <td>@item.Id</td>
+                                    <td>@item.Name</td>
+                                    <td>@item.JoinDate.ToString("dd MMM yyyy")</td>
+                                    <td>@item.Age</td>
+                                    <td class="text-center">
+                                        <input type="radio" name="selectedEmployee" class="form-check-input select-employee">
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr id="noDataRow">
+                                <td colspan="5" class="text-center py-4">
+                                    <div class="alert alert-info mb-0">
+                                        <i class="bi bi-exclamation-circle me-2"></i> Tidak ada data karyawan ditemukan
+                                    </div>
                                 </td>
                             </tr>
                         }
@@ -148,7 +161,9 @@
                 const startDate = $('#startDate').val() ? new Date($('#startDate').val()) : null;
                 const endDate = $('#endDate').val() ? new Date($('#endDate').val()) : null;
 
-                $('#employeeTable tbody tr').each(function () {
+                let visibleRowCount = 0;
+
+                $('#employeeTable tbody tr:not(#noDataRow)').each(function () {
                     const name = $(this).find('td:eq(1)').text().toLowerCase();
                     const joinDateStr = $(this).find('td:eq(2)').text();
                     const joinDate = new Date(joinDateStr);
@@ -168,10 +183,29 @@
 
                     if (nameMatch && ageMatch && dateMatch) {
                         $(this).show();
+                        visibleRowCount++;
                     } else {
                         $(this).hide();
                     }
                 });
+
+                // Show/hide no data message
+                if (visibleRowCount === 0) {
+                    // If no data row doesn't exist, create it
+                    if ($('#noDataRow').length === 0) {
+                        $('#employeeTable tbody').append(
+                            '<tr id="noDataRow">' +
+                            '<td colspan="5" class="text-center py-4">' +
+                            '<div class="alert alert-info mb-0">' +
+                            '<i class="bi bi-exclamation-circle me-2"></i> Tidak ada data karyawan yang sesuai dengan filter' +
+                            '</div></td></tr>'
+                        );
+                    } else {
+                        $('#noDataRow').show();
+                    }
+                } else {
+                    $('#noDataRow').hide();
+                }
             });
 
             // Reset filter
@@ -181,7 +215,14 @@
                 $('#maxAge').val('');
                 $('#startDate').val('');
                 $('#endDate').val('');
-                $('#employeeTable tbody tr').show();
+                $('#employeeTable tbody tr:not(#noDataRow)').show();
+
+                // If we have actual data rows, hide the no data message
+                if ($('#employeeTable tbody tr:not(#noDataRow)').length > 0) {
+                    $('#noDataRow').hide();
+                } else {
+                    $('#noDataRow').show();
+                }
             });
         });
     </script>

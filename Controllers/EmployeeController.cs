@@ -21,7 +21,7 @@ public class EmployeeController : Controller
     
     public IActionResult Create()
     {
-        return View("Edit", new Karyawan { Id = 0 });
+        return View("Edit", new Karyawan { Id = "0" });
     }
     
     public async Task<IActionResult> Edit(int id)
@@ -43,14 +43,27 @@ public class EmployeeController : Controller
             return View("Edit", employee);
         }
         
-        if (employee.Id == 0)
+        if (employee.Id == "0" || string.IsNullOrEmpty(employee.Id))
         {
             // New employee
+            // Ensure Id is not null
+            if (string.IsNullOrEmpty(employee.Id))
+            {
+                ModelState.AddModelError("Id", "ID Karyawan tidak boleh kosong");
+                return View("Edit", employee);
+            }
+            
             _context.Add(employee);
         }
         else
         {
             // Update existing employee
+            // Ensure Id is not null
+            if (string.IsNullOrEmpty(employee.Id))
+            {
+                ModelState.AddModelError("Id", "ID Karyawan tidak boleh kosong");
+                return View("Edit", employee);
+            }
             _context.Update(employee);
         }
         

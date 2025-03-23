@@ -4,7 +4,7 @@ namespace my_test_net.Models;
 
 public class Employee
 {
-    public int Id { get; set; }
+    public string Id { get; set; }
     
     [Required(ErrorMessage = "Nama karyawan harus diisi")]
     public string Name { get; set; }
