@@ -13,6 +13,30 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\android-chrome-192x192.png",
+      "PackagePath": "staticwebassets\\favicon\\android-chrome-192x192.png"
+    },
+    {
+      "Id": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\android-chrome-512x512.png",
+      "PackagePath": "staticwebassets\\favicon\\android-chrome-512x512.png"
+    },
+    {
+      "Id": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\favicon\\apple-touch-icon.png"
+    },
+    {
+      "Id": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\favicon\\favicon-16x16.png"
+    },
+    {
+      "Id": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\favicon\\favicon-32x32.png"
+    },
+    {
+      "Id": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon\\favicon.ico"
+    },
+    {
       "Id": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\site.webmanifest",
       "PackagePath": "staticwebassets\\favicon\\site.webmanifest"
     },

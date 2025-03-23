@@ -14,7 +14,7 @@ namespace my_test_net.Models
         [Column("NmKaryawan")]
         public string Name { get; set; }
 
-        [Column("TglMasukKerja")]
+        [Column("TglMasukKerja", TypeName = "datetime")]
         [DataType(DataType.Date)]
         public DateTime JoinDate { get; set; }
 

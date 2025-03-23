@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ri54EnKJhoh7tvcfMu0GX6nlsYCZ4o7/mLVSrFKsBzk=",
+  "Hash": "N9NFWjob2CRXmPLZntwH8GiH5xvgjes9kexzVY64fNI=",
   "Source": "my-test-net",
   "BasePath": "_content/my-test-net",
   "Mode": "Default",
@@ -1088,6 +1088,27 @@
       "OriginalItemSpec": "C:\\DotNet\\my-test-net\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
+      "Identity": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\rvvq8cuzfr-em7yncd5s4.gz",
+      "SourceId": "my-test-net",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/my-test-net",
+      "RelativePath": "favicon/favicon#[.{fingerprint=em7yncd5s4}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\favicon.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "i34ino4jxa",
+      "Integrity": "PrzNU1E4NHAuQR8jrXkIcFSjb5a59m3vaO+9OoscVMg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\favicon.ico"
+    },
+    {
       "Identity": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\s4wv0mbu09-rzd6atqjts.gz",
       "SourceId": "my-test-net",
       "SourceType": "Discovered",
@@ -1151,12 +1172,12 @@
       "OriginalItemSpec": "C:\\DotNet\\my-test-net\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\szgt89h11i-a6m8f2tvkr.gz",
+      "Identity": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\szgt89h11i-bwna9grjtf.gz",
       "SourceId": "my-test-net",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/my-test-net",
-      "RelativePath": "favicon/site#[.{fingerprint=a6m8f2tvkr}]?.webmanifest.gz",
+      "RelativePath": "favicon/site#[.{fingerprint=bwna9grjtf}]?.webmanifest.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1165,8 +1186,8 @@
       "RelatedAsset": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\site.webmanifest",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "614b30wm5b",
-      "Integrity": "KkxR3oRpi/dRCHOFyGxmgdEX2PfoITtVs7PSCtAJT+0=",
+      "Fingerprint": "cjujt2pa3p",
+      "Integrity": "WLbInuyxjvoWdZE4zRvaKdqKv5cZH0JQ1KampS0tto8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\site.webmanifest"
@@ -1466,6 +1487,132 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\android-chrome-192x192.png",
+      "SourceId": "my-test-net",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\DotNet\\my-test-net\\wwwroot\\",
+      "BasePath": "_content/my-test-net",
+      "RelativePath": "favicon/android-chrome-192x192#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jo3kcdbi8g",
+      "Integrity": "o1866qq/4X4UwrI7jKsS0h6aMi4tJLUxIL63mt8irgw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon\\android-chrome-192x192.png"
+    },
+    {
+      "Identity": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\android-chrome-512x512.png",
+      "SourceId": "my-test-net",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\DotNet\\my-test-net\\wwwroot\\",
+      "BasePath": "_content/my-test-net",
+      "RelativePath": "favicon/android-chrome-512x512#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aaocwg4lq9",
+      "Integrity": "DhqjrdtNs2KqEWvbakJQrUQG9wbfBcJbejil7+yXsok=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon\\android-chrome-512x512.png"
+    },
+    {
+      "Identity": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\apple-touch-icon.png",
+      "SourceId": "my-test-net",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\DotNet\\my-test-net\\wwwroot\\",
+      "BasePath": "_content/my-test-net",
+      "RelativePath": "favicon/apple-touch-icon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qgaawpdxum",
+      "Integrity": "eoflTbPVdscy8LKNNa/H5rcwropxzCzvDdjpSZS1vj4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon\\apple-touch-icon.png"
+    },
+    {
+      "Identity": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\favicon-16x16.png",
+      "SourceId": "my-test-net",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\DotNet\\my-test-net\\wwwroot\\",
+      "BasePath": "_content/my-test-net",
+      "RelativePath": "favicon/favicon-16x16#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "131napfx2i",
+      "Integrity": "wxzjQ0ocAgfv7HjHqLIxO3afmTyDoHdbBHoCS3xUnqk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon\\favicon-16x16.png"
+    },
+    {
+      "Identity": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\favicon-32x32.png",
+      "SourceId": "my-test-net",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\DotNet\\my-test-net\\wwwroot\\",
+      "BasePath": "_content/my-test-net",
+      "RelativePath": "favicon/favicon-32x32#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bl3i6hj196",
+      "Integrity": "r/xYIIJR4/J03Fyq93l69X/rJtzEXQmqgttTzHQq7LA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon\\favicon-32x32.png"
+    },
+    {
+      "Identity": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\favicon.ico",
+      "SourceId": "my-test-net",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\DotNet\\my-test-net\\wwwroot\\",
+      "BasePath": "_content/my-test-net",
+      "RelativePath": "favicon/favicon#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "em7yncd5s4",
+      "Integrity": "FpLsStxcOzYdWJXpJgtkQNGislEAAKqtC5wCcHYFzhY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon\\favicon.ico"
+    },
+    {
       "Identity": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\site.webmanifest",
       "SourceId": "my-test-net",
       "SourceType": "Discovered",
@@ -1480,8 +1627,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "a6m8f2tvkr",
-      "Integrity": "vpZFtiVkcXeNTmG7wXlsNTzeA6dgylnalEooF5Gcjzs=",
+      "Fingerprint": "bwna9grjtf",
+      "Integrity": "hQ+5LN16XXeuLVWcLaujtRkyEjVyC+s4PwhfDaEM93M=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon\\site.webmanifest"
@@ -3366,13 +3513,423 @@
       ]
     },
     {
-      "Route": "favicon/site.a6m8f2tvkr.webmanifest",
-      "AssetFile": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\szgt89h11i-a6m8f2tvkr.gz",
+      "Route": "favicon/android-chrome-192x192.jo3kcdbi8g.png",
+      "AssetFile": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\android-chrome-192x192.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13597"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o1866qq/4X4UwrI7jKsS0h6aMi4tJLUxIL63mt8irgw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 21:41:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jo3kcdbi8g"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon/android-chrome-192x192.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-o1866qq/4X4UwrI7jKsS0h6aMi4tJLUxIL63mt8irgw="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/android-chrome-192x192.png",
+      "AssetFile": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\android-chrome-192x192.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13597"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o1866qq/4X4UwrI7jKsS0h6aMi4tJLUxIL63mt8irgw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 21:41:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-o1866qq/4X4UwrI7jKsS0h6aMi4tJLUxIL63mt8irgw="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/android-chrome-512x512.aaocwg4lq9.png",
+      "AssetFile": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\android-chrome-512x512.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37372"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DhqjrdtNs2KqEWvbakJQrUQG9wbfBcJbejil7+yXsok=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 21:41:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aaocwg4lq9"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon/android-chrome-512x512.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DhqjrdtNs2KqEWvbakJQrUQG9wbfBcJbejil7+yXsok="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/android-chrome-512x512.png",
+      "AssetFile": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\android-chrome-512x512.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37372"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DhqjrdtNs2KqEWvbakJQrUQG9wbfBcJbejil7+yXsok=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 21:41:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DhqjrdtNs2KqEWvbakJQrUQG9wbfBcJbejil7+yXsok="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/apple-touch-icon.png",
+      "AssetFile": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\apple-touch-icon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12205"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eoflTbPVdscy8LKNNa/H5rcwropxzCzvDdjpSZS1vj4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 21:41:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eoflTbPVdscy8LKNNa/H5rcwropxzCzvDdjpSZS1vj4="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/apple-touch-icon.qgaawpdxum.png",
+      "AssetFile": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\apple-touch-icon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12205"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eoflTbPVdscy8LKNNa/H5rcwropxzCzvDdjpSZS1vj4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 21:41:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qgaawpdxum"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon/apple-touch-icon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eoflTbPVdscy8LKNNa/H5rcwropxzCzvDdjpSZS1vj4="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/favicon-16x16.131napfx2i.png",
+      "AssetFile": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\favicon-16x16.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "684"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wxzjQ0ocAgfv7HjHqLIxO3afmTyDoHdbBHoCS3xUnqk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 21:41:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "131napfx2i"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon/favicon-16x16.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wxzjQ0ocAgfv7HjHqLIxO3afmTyDoHdbBHoCS3xUnqk="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/favicon-16x16.png",
+      "AssetFile": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\favicon-16x16.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "684"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wxzjQ0ocAgfv7HjHqLIxO3afmTyDoHdbBHoCS3xUnqk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 21:41:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wxzjQ0ocAgfv7HjHqLIxO3afmTyDoHdbBHoCS3xUnqk="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/favicon-32x32.bl3i6hj196.png",
+      "AssetFile": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\favicon-32x32.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1578"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r/xYIIJR4/J03Fyq93l69X/rJtzEXQmqgttTzHQq7LA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 21:41:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bl3i6hj196"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon/favicon-32x32.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-r/xYIIJR4/J03Fyq93l69X/rJtzEXQmqgttTzHQq7LA="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/favicon-32x32.png",
+      "AssetFile": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\favicon-32x32.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1578"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r/xYIIJR4/J03Fyq93l69X/rJtzEXQmqgttTzHQq7LA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 21:41:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-r/xYIIJR4/J03Fyq93l69X/rJtzEXQmqgttTzHQq7LA="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/favicon.em7yncd5s4.ico",
+      "AssetFile": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\rvvq8cuzfr-em7yncd5s4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.004444444444"
+          "Quality": "0.000275482094"
         }
       ],
       "ResponseHeaders": [
@@ -3382,15 +3939,313 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "224"
+          "Value": "3629"
         },
         {
           "Name": "ETag",
-          "Value": "\"KkxR3oRpi/dRCHOFyGxmgdEX2PfoITtVs7PSCtAJT+0=\""
+          "Value": "\"PrzNU1E4NHAuQR8jrXkIcFSjb5a59m3vaO+9OoscVMg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 04:39:08 GMT"
+          "Value": "Sat, 22 Mar 2025 21:41:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"FpLsStxcOzYdWJXpJgtkQNGislEAAKqtC5wCcHYFzhY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "em7yncd5s4"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon/favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FpLsStxcOzYdWJXpJgtkQNGislEAAKqtC5wCcHYFzhY="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/favicon.em7yncd5s4.ico",
+      "AssetFile": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15406"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FpLsStxcOzYdWJXpJgtkQNGislEAAKqtC5wCcHYFzhY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 21:41:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "em7yncd5s4"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon/favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FpLsStxcOzYdWJXpJgtkQNGislEAAKqtC5wCcHYFzhY="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/favicon.em7yncd5s4.ico.gz",
+      "AssetFile": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\rvvq8cuzfr-em7yncd5s4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3629"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PrzNU1E4NHAuQR8jrXkIcFSjb5a59m3vaO+9OoscVMg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 21:41:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "em7yncd5s4"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon/favicon.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PrzNU1E4NHAuQR8jrXkIcFSjb5a59m3vaO+9OoscVMg="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/favicon.ico",
+      "AssetFile": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\rvvq8cuzfr-em7yncd5s4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000275482094"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3629"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PrzNU1E4NHAuQR8jrXkIcFSjb5a59m3vaO+9OoscVMg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 21:41:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"FpLsStxcOzYdWJXpJgtkQNGislEAAKqtC5wCcHYFzhY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FpLsStxcOzYdWJXpJgtkQNGislEAAKqtC5wCcHYFzhY="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/favicon.ico",
+      "AssetFile": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15406"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FpLsStxcOzYdWJXpJgtkQNGislEAAKqtC5wCcHYFzhY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 21:41:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FpLsStxcOzYdWJXpJgtkQNGislEAAKqtC5wCcHYFzhY="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/favicon.ico.gz",
+      "AssetFile": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\rvvq8cuzfr-em7yncd5s4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3629"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PrzNU1E4NHAuQR8jrXkIcFSjb5a59m3vaO+9OoscVMg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 21:41:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PrzNU1E4NHAuQR8jrXkIcFSjb5a59m3vaO+9OoscVMg="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/site.bwna9grjtf.webmanifest",
+      "AssetFile": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\szgt89h11i-bwna9grjtf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.005181347150"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "192"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WLbInuyxjvoWdZE4zRvaKdqKv5cZH0JQ1KampS0tto8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 04:42:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3410,13 +4265,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"vpZFtiVkcXeNTmG7wXlsNTzeA6dgylnalEooF5Gcjzs=\""
+          "Value": "W/\"hQ+5LN16XXeuLVWcLaujtRkyEjVyC+s4PwhfDaEM93M=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "a6m8f2tvkr"
+          "Value": "bwna9grjtf"
         },
         {
           "Name": "label",
@@ -3424,12 +4279,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-vpZFtiVkcXeNTmG7wXlsNTzeA6dgylnalEooF5Gcjzs="
+          "Value": "sha256-hQ+5LN16XXeuLVWcLaujtRkyEjVyC+s4PwhfDaEM93M="
         }
       ]
     },
     {
-      "Route": "favicon/site.a6m8f2tvkr.webmanifest",
+      "Route": "favicon/site.bwna9grjtf.webmanifest",
       "AssetFile": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\site.webmanifest",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3439,7 +4294,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "425"
+          "Value": "379"
         },
         {
           "Name": "Content-Type",
@@ -3447,11 +4302,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vpZFtiVkcXeNTmG7wXlsNTzeA6dgylnalEooF5Gcjzs=\""
+          "Value": "\"hQ+5LN16XXeuLVWcLaujtRkyEjVyC+s4PwhfDaEM93M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 04:39:08 GMT"
+          "Value": "Sun, 23 Mar 2025 04:42:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3461,7 +4316,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "a6m8f2tvkr"
+          "Value": "bwna9grjtf"
         },
         {
           "Name": "label",
@@ -3469,13 +4324,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-vpZFtiVkcXeNTmG7wXlsNTzeA6dgylnalEooF5Gcjzs="
+          "Value": "sha256-hQ+5LN16XXeuLVWcLaujtRkyEjVyC+s4PwhfDaEM93M="
         }
       ]
     },
     {
-      "Route": "favicon/site.a6m8f2tvkr.webmanifest.gz",
-      "AssetFile": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\szgt89h11i-a6m8f2tvkr.gz",
+      "Route": "favicon/site.bwna9grjtf.webmanifest.gz",
+      "AssetFile": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\szgt89h11i-bwna9grjtf.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3484,7 +4339,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "224"
+          "Value": "192"
         },
         {
           "Name": "Content-Type",
@@ -3492,11 +4347,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KkxR3oRpi/dRCHOFyGxmgdEX2PfoITtVs7PSCtAJT+0=\""
+          "Value": "\"WLbInuyxjvoWdZE4zRvaKdqKv5cZH0JQ1KampS0tto8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 04:39:08 GMT"
+          "Value": "Sun, 23 Mar 2025 04:42:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3514,7 +4369,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "a6m8f2tvkr"
+          "Value": "bwna9grjtf"
         },
         {
           "Name": "label",
@@ -3522,18 +4377,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-KkxR3oRpi/dRCHOFyGxmgdEX2PfoITtVs7PSCtAJT+0="
+          "Value": "sha256-WLbInuyxjvoWdZE4zRvaKdqKv5cZH0JQ1KampS0tto8="
         }
       ]
     },
     {
       "Route": "favicon/site.webmanifest",
-      "AssetFile": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\szgt89h11i-a6m8f2tvkr.gz",
+      "AssetFile": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\szgt89h11i-bwna9grjtf.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.004444444444"
+          "Quality": "0.005181347150"
         }
       ],
       "ResponseHeaders": [
@@ -3543,15 +4398,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "224"
+          "Value": "192"
         },
         {
           "Name": "ETag",
-          "Value": "\"KkxR3oRpi/dRCHOFyGxmgdEX2PfoITtVs7PSCtAJT+0=\""
+          "Value": "\"WLbInuyxjvoWdZE4zRvaKdqKv5cZH0JQ1KampS0tto8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 04:39:08 GMT"
+          "Value": "Sun, 23 Mar 2025 04:42:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3571,13 +4426,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"vpZFtiVkcXeNTmG7wXlsNTzeA6dgylnalEooF5Gcjzs=\""
+          "Value": "W/\"hQ+5LN16XXeuLVWcLaujtRkyEjVyC+s4PwhfDaEM93M=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vpZFtiVkcXeNTmG7wXlsNTzeA6dgylnalEooF5Gcjzs="
+          "Value": "sha256-hQ+5LN16XXeuLVWcLaujtRkyEjVyC+s4PwhfDaEM93M="
         }
       ]
     },
@@ -3592,7 +4447,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "425"
+          "Value": "379"
         },
         {
           "Name": "Content-Type",
@@ -3600,11 +4455,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vpZFtiVkcXeNTmG7wXlsNTzeA6dgylnalEooF5Gcjzs=\""
+          "Value": "\"hQ+5LN16XXeuLVWcLaujtRkyEjVyC+s4PwhfDaEM93M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 04:39:08 GMT"
+          "Value": "Sun, 23 Mar 2025 04:42:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3614,13 +4469,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vpZFtiVkcXeNTmG7wXlsNTzeA6dgylnalEooF5Gcjzs="
+          "Value": "sha256-hQ+5LN16XXeuLVWcLaujtRkyEjVyC+s4PwhfDaEM93M="
         }
       ]
     },
     {
       "Route": "favicon/site.webmanifest.gz",
-      "AssetFile": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\szgt89h11i-a6m8f2tvkr.gz",
+      "AssetFile": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\szgt89h11i-bwna9grjtf.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3629,7 +4484,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "224"
+          "Value": "192"
         },
         {
           "Name": "Content-Type",
@@ -3637,11 +4492,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KkxR3oRpi/dRCHOFyGxmgdEX2PfoITtVs7PSCtAJT+0=\""
+          "Value": "\"WLbInuyxjvoWdZE4zRvaKdqKv5cZH0JQ1KampS0tto8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 04:39:08 GMT"
+          "Value": "Sun, 23 Mar 2025 04:42:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3659,7 +4514,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-KkxR3oRpi/dRCHOFyGxmgdEX2PfoITtVs7PSCtAJT+0="
+          "Value": "sha256-WLbInuyxjvoWdZE4zRvaKdqKv5cZH0JQ1KampS0tto8="
         }
       ]
     },

@@ -8,6 +8,7 @@ namespace my_test_net.Controllers;
 public class EmployeeController : Controller
 {
     private readonly ApplicationDbContext _context;
+    private readonly DateTime _minSqlDate = new DateTime(1753, 1, 1);
 
     public EmployeeController(ApplicationDbContext context)
     {
@@ -24,7 +25,7 @@ public class EmployeeController : Controller
         return View("Edit", new Karyawan { Id = "0" });
     }
     
-    public async Task<IActionResult> Edit(int id)
+    public async Task<IActionResult> Edit(string id)
     {
         var employee = await _context.Karyawan.FindAsync(id);
         if (employee == null)
@@ -38,6 +39,13 @@ public class EmployeeController : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Save(Karyawan employee)
     {
+        // Validate date is within SQL Server datetime range
+        if (employee.JoinDate < _minSqlDate)
+        {
+            ModelState.AddModelError("JoinDate", "Tanggal tidak valid. Harus setelah 1 Januari 1753.");
+            return View("Edit", employee);
+        }
+
         if (!ModelState.IsValid)
         {
             return View("Edit", employee);
@@ -73,7 +81,7 @@ public class EmployeeController : Controller
     
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Delete(int id)
+    public async Task<IActionResult> Delete(string id)
     {
         var employee = await _context.Karyawan.FindAsync(id);
         if (employee != null)
