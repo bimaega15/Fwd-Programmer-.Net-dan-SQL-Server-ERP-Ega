@@ -22,8 +22,9 @@
 
                         <div class="mb-3">
                             <label asp-for="Id" class="form-label">ID</label>
-                            <input asp-for="Id" class="form-control" placeholder="Masukkan ID karyawan" maxlength="10" />
-                            <small class="form-text text-muted">Maksimal 10 karakter</small>
+                            <input asp-for="Id" class="form-control" placeholder="Masukkan ID karyawan"
+                                maxlength="30" />
+                            <small class="form-text text-muted">Maksimal 30 karakter</small>
                             <span asp-validation-for="Id" class="text-danger"></span>
                         </div>
 
@@ -81,8 +82,8 @@
                 if (!id) {
                     $('#Id').next('.text-danger').text('ID karyawan harus diisi');
                     isValid = false;
-                } else if (id.length > 10) { // Match this to your DB column size
-                    $('#Id').next('.text-danger').text('ID karyawan maksimal 10 karakter');
+                } else if (id.length > 30) { // Match this to your DB column size
+                    $('#Id').next('.text-danger').text('ID karyawan maksimal 30 karakter');
                     isValid = false;
                 }
 
