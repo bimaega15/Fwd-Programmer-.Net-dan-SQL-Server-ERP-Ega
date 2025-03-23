@@ -1,33 +1,32 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using my_test_net.Data;
 using my_test_net.Models;
 
 namespace my_test_net.Controllers;
 
 public class EmployeeController : Controller
 {
-    // Temporary storage for employees - in a real app, use a database
-    private static List<Employee> _employees = new List<Employee>
+    private readonly ApplicationDbContext _context;
+
+    public EmployeeController(ApplicationDbContext context)
     {
-        new Employee { Id = 1, Name = "Budi Santoso", JoinDate = DateTime.Parse("2020-01-15"), Age = 28 },
-        new Employee { Id = 2, Name = "Siti Rahayu", JoinDate = DateTime.Parse("2019-05-20"), Age = 32 },
-        new Employee { Id = 3, Name = "Ahmad Wijaya", JoinDate = DateTime.Parse("2021-03-10"), Age = 25 }
-    };
+        _context = context;
+    }
     
-    private static int _nextId = 4;
-    
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        return View(_employees);
+        return View(await _context.Karyawan.ToListAsync());
     }
     
     public IActionResult Create()
     {
-        return View("Edit", new Employee { Id = 0 });
+        return View("Edit", new Karyawan { Id = 0 });
     }
     
-    public IActionResult Edit(int id)
+    public async Task<IActionResult> Edit(int id)
     {
-        var employee = _employees.FirstOrDefault(e => e.Id == id);
+        var employee = await _context.Karyawan.FindAsync(id);
         if (employee == null)
         {
             return NotFound();
@@ -37,7 +36,7 @@ public class EmployeeController : Controller
     
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public IActionResult Save(Employee employee)
+    public async Task<IActionResult> Save(Karyawan employee)
     {
         if (!ModelState.IsValid)
         {
@@ -47,30 +46,27 @@ public class EmployeeController : Controller
         if (employee.Id == 0)
         {
             // New employee
-            employee.Id = _nextId++;
-            _employees.Add(employee);
+            _context.Add(employee);
         }
         else
         {
             // Update existing employee
-            var index = _employees.FindIndex(e => e.Id == employee.Id);
-            if (index != -1)
-            {
-                _employees[index] = employee;
-            }
+            _context.Update(employee);
         }
         
+        await _context.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
     }
     
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public IActionResult Delete(int id)
+    public async Task<IActionResult> Delete(int id)
     {
-        var employee = _employees.FirstOrDefault(e => e.Id == id);
+        var employee = await _context.Karyawan.FindAsync(id);
         if (employee != null)
         {
-            _employees.Remove(employee);
+            _context.Karyawan.Remove(employee);
+            await _context.SaveChangesAsync();
         }
         
         return RedirectToAction(nameof(Index));

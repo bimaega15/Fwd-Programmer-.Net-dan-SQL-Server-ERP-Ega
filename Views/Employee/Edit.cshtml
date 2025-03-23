@@ -1,57 +1,40 @@
-@model my_test_net.Models.Employee
+@model my_test_net.Models.Karyawan
 
 @{
-    ViewData["Title"] = Model.Id == 0 ? "Tambah Karyawan Baru" : "Edit Data Karyawan";
+    ViewData["Title"] = Model.Id == 0 ? "Tambah Karyawan" : "Edit Karyawan";
 }
 
-<div class="container mt-4">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card shadow">
-                <div class="card-header bg-primary text-white">
-                    <h4 class="mb-0">@(Model.Id == 0 ? "Tambah Karyawan Baru" : "Edit Data Karyawan")</h4>
-                </div>
-                <div class="card-body">
-                    <form asp-action="Save" method="post" id="employeeForm">
-                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                        
-                        <input type="hidden" asp-for="Id" />
-                        
-                        <div class="mb-3">
-                            <label asp-for="Id" class="form-label">ID</label>
-                            <input type="text" class="form-control" value="@(Model.Id == 0 ? "(Auto)" : Model.Id.ToString())" disabled>
-                        </div>
-                        
-                        <div class="mb-3">
-                            <label asp-for="Name" class="form-label">Nama Karyawan</label>
-                            <input asp-for="Name" class="form-control" />
-                            <span asp-validation-for="Name" class="text-danger"></span>
-                        </div>
-                        
-                        <div class="mb-3">
-                            <label asp-for="JoinDate" class="form-label">Tanggal Masuk Kerja</label>
-                            <input asp-for="JoinDate" class="form-control" type="date" />
-                            <span asp-validation-for="JoinDate" class="text-danger"></span>
-                        </div>
-                        
-                        <div class="mb-3">
-                            <label asp-for="Age" class="form-label">Usia</label>
-                            <input asp-for="Age" class="form-control" type="number" min="18" max="65" />
-                            <span asp-validation-for="Age" class="text-danger"></span>
-                        </div>
-                        
-                        <div class="d-flex justify-content-between mt-4">
-                            <a asp-action="Index" class="btn btn-secondary">
-                                <i class="bi bi-arrow-left"></i> Kembali
-                            </a>
-                            <button type="submit" class="btn btn-success">
-                                <i class="bi bi-save"></i> Simpan
-                            </button>
-                        </div>
-                    </form>
-                </div>
+<h1>@ViewData["Title"]</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Save" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+
+            <div class="form-group mb-3">
+                <label asp-for="Name" class="control-label">Nama Karyawan</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-        </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="JoinDate" class="control-label">Tanggal Masuk Kerja</label>
+                <input asp-for="JoinDate" class="form-control" type="date" />
+                <span asp-validation-for="JoinDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Age" class="control-label">Usia</label>
+                <input asp-for="Age" class="form-control" />
+                <span asp-validation-for="Age" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <button type="submit" class="btn btn-primary">Simpan</button>
+                <a asp-action="Index" class="btn btn-secondary">Kembali</a>
+            </div>
+        </form>
     </div>
 </div>
 
@@ -59,41 +42,4 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
-    
-        <script>
-            $(document).ready(function() {
-                // Additional client-side validation
-                $('#employeeForm').submit(function(e) {
-                    let isValid = true;
-                    const name = $('#Name').val().trim();
-                    const joinDate = $('#JoinDate').val();
-                    const age = $('#Age').val();
-                
-                    if (!name) {
-                        $('#Name').next('.text-danger').text('Nama karyawan harus diisi');
-                        isValid = false;
-                    }
-                
-                    if (!joinDate) {
-                        $('#JoinDate').next('.text-danger').text('Tanggal masuk kerja harus diisi');
-                        isValid = false;
-                    }
-                
-                    if (!age) {
-                        $('#Age').next('.text-danger').text('Usia harus diisi');
-                        isValid = false;
-                    } else if (age < 18 || age > 65) {
-                        $('#Age').next('.text-danger').text('Usia harus antara 18 dan 65 tahun');
-                        isValid = false;
-                    }
-                
-                    if (!isValid) {
-                        e.preventDefault();
-                    }
-                });
-            });
-        </script>
 }
-
-        
-                                                                                                                        

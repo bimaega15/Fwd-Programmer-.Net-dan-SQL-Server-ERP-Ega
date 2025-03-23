@@ -1,7 +1,7 @@
-@model IEnumerable<my_test_net.Models.Employee>
+@model IEnumerable<my_test_net.Models.Karyawan>
 
 @{
-    ViewData["Title"] = "Manajemen Karyawan";
+    ViewData["Title"] = "Daftar Karyawan";
 }
 
 <div class="container mt-4">
@@ -79,13 +79,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (var employee in Model)
+                        @foreach (var item in Model)
                         {
-                            <tr data-id="@employee.Id">
-                                <td>@employee.Id</td>
-                                <td>@employee.Name</td>
-                                <td>@employee.JoinDate.ToString("dd MMM yyyy")</td>
-                                <td>@employee.Age</td>
+                            <tr data-id="@item.Id">
+                                <td>@item.Id</td>
+                                <td>@item.Name</td>
+                                <td>@item.JoinDate.ToString("dd MMM yyyy")</td>
+                                <td>@item.Age</td>
                                 <td class="text-center">
                                     <input type="radio" name="selectedEmployee" class="form-check-input select-employee">
                                 </td>
@@ -186,7 +186,3 @@
         });
     </script>
 }
-
-                                   
-                                   
-                         
