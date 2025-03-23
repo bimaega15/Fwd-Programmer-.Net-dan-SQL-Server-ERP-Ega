@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\site.webmanifest",
+      "PackagePath": "staticwebassets\\favicon\\site.webmanifest"
+    },
+    {
       "Id": "C:\\DotNet\\my-test-net\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TH+dTSMxiX9HQKlED2JCkfpZOZfX4HpylXaaPH/RZLk=",
+  "Hash": "Ri54EnKJhoh7tvcfMu0GX6nlsYCZ4o7/mLVSrFKsBzk=",
   "Source": "my-test-net",
   "BasePath": "_content/my-test-net",
   "Mode": "Default",
@@ -1151,6 +1151,27 @@
       "OriginalItemSpec": "C:\\DotNet\\my-test-net\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
+      "Identity": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\szgt89h11i-a6m8f2tvkr.gz",
+      "SourceId": "my-test-net",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/my-test-net",
+      "RelativePath": "favicon/site#[.{fingerprint=a6m8f2tvkr}]?.webmanifest.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\site.webmanifest",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "614b30wm5b",
+      "Integrity": "KkxR3oRpi/dRCHOFyGxmgdEX2PfoITtVs7PSCtAJT+0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\site.webmanifest"
+    },
+    {
       "Identity": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\ufv9kdiovu-356vix0kms.gz",
       "SourceId": "my-test-net",
       "SourceType": "Discovered",
@@ -1443,6 +1464,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\site.webmanifest",
+      "SourceId": "my-test-net",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\DotNet\\my-test-net\\wwwroot\\",
+      "BasePath": "_content/my-test-net",
+      "RelativePath": "favicon/site#[.{fingerprint}]?.webmanifest",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "a6m8f2tvkr",
+      "Integrity": "vpZFtiVkcXeNTmG7wXlsNTzeA6dgylnalEooF5Gcjzs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon\\site.webmanifest"
     },
     {
       "Identity": "C:\\DotNet\\my-test-net\\wwwroot\\js\\site.js",
@@ -3320,6 +3362,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/site.a6m8f2tvkr.webmanifest",
+      "AssetFile": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\szgt89h11i-a6m8f2tvkr.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004444444444"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "224"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KkxR3oRpi/dRCHOFyGxmgdEX2PfoITtVs7PSCtAJT+0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 04:39:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/manifest+json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vpZFtiVkcXeNTmG7wXlsNTzeA6dgylnalEooF5Gcjzs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a6m8f2tvkr"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon/site.webmanifest"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vpZFtiVkcXeNTmG7wXlsNTzeA6dgylnalEooF5Gcjzs="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/site.a6m8f2tvkr.webmanifest",
+      "AssetFile": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\site.webmanifest",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "425"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/manifest+json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vpZFtiVkcXeNTmG7wXlsNTzeA6dgylnalEooF5Gcjzs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 04:39:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a6m8f2tvkr"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon/site.webmanifest"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vpZFtiVkcXeNTmG7wXlsNTzeA6dgylnalEooF5Gcjzs="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/site.a6m8f2tvkr.webmanifest.gz",
+      "AssetFile": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\szgt89h11i-a6m8f2tvkr.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "224"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/manifest+json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KkxR3oRpi/dRCHOFyGxmgdEX2PfoITtVs7PSCtAJT+0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 04:39:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a6m8f2tvkr"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon/site.webmanifest.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KkxR3oRpi/dRCHOFyGxmgdEX2PfoITtVs7PSCtAJT+0="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/site.webmanifest",
+      "AssetFile": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\szgt89h11i-a6m8f2tvkr.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004444444444"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "224"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KkxR3oRpi/dRCHOFyGxmgdEX2PfoITtVs7PSCtAJT+0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 04:39:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/manifest+json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vpZFtiVkcXeNTmG7wXlsNTzeA6dgylnalEooF5Gcjzs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vpZFtiVkcXeNTmG7wXlsNTzeA6dgylnalEooF5Gcjzs="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/site.webmanifest",
+      "AssetFile": "C:\\DotNet\\my-test-net\\wwwroot\\favicon\\site.webmanifest",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "425"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/manifest+json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vpZFtiVkcXeNTmG7wXlsNTzeA6dgylnalEooF5Gcjzs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 04:39:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vpZFtiVkcXeNTmG7wXlsNTzeA6dgylnalEooF5Gcjzs="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/site.webmanifest.gz",
+      "AssetFile": "C:\\DotNet\\my-test-net\\obj\\Debug\\net9.0\\compressed\\szgt89h11i-a6m8f2tvkr.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "224"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/manifest+json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KkxR3oRpi/dRCHOFyGxmgdEX2PfoITtVs7PSCtAJT+0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 04:39:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KkxR3oRpi/dRCHOFyGxmgdEX2PfoITtVs7PSCtAJT+0="
         }
       ]
     },
