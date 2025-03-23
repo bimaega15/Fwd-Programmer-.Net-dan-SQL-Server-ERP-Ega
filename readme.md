@@ -64,6 +64,7 @@ The application will be available at `https://localhost:5001` and `http://localh
 ## Documentation
 
 - System Analyst documentation is available at [SystemAnalyst/SystemAnalyst-Transaksi.pdf](SystemAnalyst/SystemAnalyst-Transaksi.pdf)
+- Database backup file is available at [Database/Employee.bak](Database/Employee.bak). You can restore this backup using SQL Server Management Studio by right-clicking on Databases, selecting "Restore Database", and following the wizard to import the .bak file.
 
 ## Contributing
 
