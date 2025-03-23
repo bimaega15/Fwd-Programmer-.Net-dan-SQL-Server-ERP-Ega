@@ -9,37 +9,42 @@
         <div class="col-md-6">
             <div class="card shadow">
                 <div class="card-header bg-primary text-white">
-                    <h4 class="mb-0">@(string.IsNullOrEmpty(Model.Id) || Model.Id == "0" ? "Tambah Karyawan Baru" :
-                        "Edit Data Karyawan")</ h4 >
+                    <h4 class="mb-0">@(ViewData["Page"] == "add" ? "Tambah Karyawan Baru" : "Edit Data Karyawan")</h4>
                 </div>
                 <div class="card-body">
                     <form asp-action="Save" method="post" id="employeeForm">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-                        <input type="hidden" asp-for="Id" />
+                        @if (ViewData["Page"] != null)
+                        {
+                            <input type="hidden" name="Page" value="@ViewData["Page"]" />
+                        }
 
                         <div class="mb-3">
                             <label asp-for="Id" class="form-label">ID</label>
-                            <input type="text" class="form-control"
-                                value="@(string.IsNullOrEmpty(Model.Id) || Model.Id == "0" ? "(Auto)" : Model.Id)"
-                                disabled>
+                            <input asp-for="Id" class="form-control" placeholder="Masukkan ID karyawan" maxlength="10" />
+                            <small class="form-text text-muted">Maksimal 10 karakter</small>
+                            <span asp-validation-for="Id" class="text-danger"></span>
                         </div>
 
                         <div class="mb-3">
                             <label asp-for="Name" class="form-label">Nama Karyawan</label>
-                            <input asp-for="Name" class="form-control" />
+                            <input asp-for="Name" class="form-control" placeholder="Masukkan nama lengkap karyawan" />
                             <span asp-validation-for="Name" class="text-danger"></span>
                         </div>
 
                         <div class="mb-3">
                             <label asp-for="JoinDate" class="form-label">Tanggal Masuk Kerja</label>
-                            <input asp-for="JoinDate" class="form-control" type="date" />
+                            <input asp-for="JoinDate" class="form-control" type="date"
+                                value="@(Model.JoinDate == default(DateTime) ? "2020-01-01" : Model.JoinDate.ToString("yyyy-MM-dd"))"
+                                placeholder="Pilih tanggal masuk kerja" />
                             <span asp-validation-for="JoinDate" class="text-danger"></span>
                         </div>
 
                         <div class="mb-3">
                             <label asp-for="Age" class="form-label">Usia</label>
-                            <input asp-for="Age" class="form-control" type="number" min="18" max="65" />
+                            <input asp-for="Age" class="form-control" type="number" min="18" max="65"
+                                placeholder="Masukkan usia (18-65)" />
                             <span asp-validation-for="Age" class="text-danger"></span>
                         </div>
 
@@ -68,9 +73,18 @@
             // Additional client-side validation
             $('#employeeForm').submit(function (e) {
                 let isValid = true;
+                const id = $('#Id').val().trim();
                 const name = $('#Name').val().trim();
                 const joinDate = $('#JoinDate').val();
                 const age = $('#Age').val();
+
+                if (!id) {
+                    $('#Id').next('.text-danger').text('ID karyawan harus diisi');
+                    isValid = false;
+                } else if (id.length > 10) { // Match this to your DB column size
+                    $('#Id').next('.text-danger').text('ID karyawan maksimal 10 karakter');
+                    isValid = false;
+                }
 
                 if (!name) {
                     $('#Name').next('.text-danger').text('Nama karyawan harus diisi');

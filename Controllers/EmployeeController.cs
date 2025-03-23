@@ -14,17 +14,19 @@ public class EmployeeController : Controller
     {
         _context = context;
     }
-    
+
     public async Task<IActionResult> Index()
     {
         return View(await _context.Karyawan.ToListAsync());
     }
-    
+
     public IActionResult Create()
     {
-        return View("Edit", new Karyawan { Id = "0" });
+        var model = new Karyawan { Id = "0" };
+        ViewData["Page"] = "add";
+        return View("Edit", model);
     }
-    
+
     public async Task<IActionResult> Edit(string id)
     {
         var employee = await _context.Karyawan.FindAsync(id);
@@ -32,9 +34,10 @@ public class EmployeeController : Controller
         {
             return NotFound();
         }
+        ViewData["Page"] = "edit";
         return View(employee);
     }
-    
+
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Save(Karyawan employee)
@@ -50,8 +53,8 @@ public class EmployeeController : Controller
         {
             return View("Edit", employee);
         }
-        
-        if (employee.Id == "0" || string.IsNullOrEmpty(employee.Id))
+
+        if (Request.Form["Page"] == "add")
         {
             // New employee
             // Ensure Id is not null
@@ -60,25 +63,40 @@ public class EmployeeController : Controller
                 ModelState.AddModelError("Id", "ID Karyawan tidak boleh kosong");
                 return View("Edit", employee);
             }
-            
+
             _context.Add(employee);
         }
         else
         {
             // Update existing employee
-            // Ensure Id is not null
-            if (string.IsNullOrEmpty(employee.Id))
+            // First retrieve the existing record
+            var existingEmployee = await _context.Karyawan.FindAsync(employee.Id);
+
+            if (existingEmployee == null)
             {
-                ModelState.AddModelError("Id", "ID Karyawan tidak boleh kosong");
-                return View("Edit", employee);
+                // Record not found, perhaps deleted by another user
+                return NotFound($"Employee with ID {employee.Id} not found.");
             }
-            _context.Update(employee);
+
+            // Update only the properties you need
+            existingEmployee.Name = employee.Name;
+            existingEmployee.JoinDate = employee.JoinDate;
+            existingEmployee.Age = employee.Age;
+
+            // No need for explicit Update() call
         }
-        
-        await _context.SaveChangesAsync();
-        return RedirectToAction(nameof(Index));
+
+        try
+        {
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+        catch (DbUpdateConcurrencyException)
+        {
+            // Handle concurrency conflict
+            return View("Edit", employee);
+        }
     }
-    
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Delete(string id)
@@ -89,7 +107,7 @@ public class EmployeeController : Controller
             _context.Karyawan.Remove(employee);
             await _context.SaveChangesAsync();
         }
-        
+
         return RedirectToAction(nameof(Index));
     }
 }
