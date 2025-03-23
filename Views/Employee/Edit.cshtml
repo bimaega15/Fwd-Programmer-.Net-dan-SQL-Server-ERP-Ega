@@ -1,7 +1,8 @@
 @model my_test_net.Models.Karyawan
 
 @{
-    ViewData["Title"] = string.IsNullOrEmpty(Model.Id) || Model.Id == "0" ? "Tambah Karyawan Baru" : "Edit Data Karyawan";
+    var isNewEmployee = ViewData["Page"] == "add";
+    ViewData["Title"] = isNewEmployee ? "Tambah Karyawan Baru" : "Edit Data Karyawan";
 }
 
 <div class="container mt-4">
@@ -9,12 +10,11 @@
         <div class="col-md-6">
             <div class="card shadow">
                 <div class="card-header bg-primary text-white">
-                    <h4 class="mb-0">@(ViewData["Page"] == "add" ? "Tambah Karyawan Baru" : "Edit Data Karyawan")</h4>
+                    <h4 class="mb-0">@ViewData["Title"]</h4>
                 </div>
                 <div class="card-body">
                     <form asp-action="Save" method="post" id="employeeForm">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-
                         @if (ViewData["Page"] != null)
                         {
                             <input type="hidden" name="Page" value="@ViewData["Page"]" />
@@ -22,9 +22,9 @@
 
                         <div class="mb-3">
                             <label asp-for="Id" class="form-label">ID</label>
-                            <input asp-for="Id" class="form-control" placeholder="Masukkan ID karyawan"
-                                maxlength="30" />
-                            <small class="form-text text-muted">Maksimal 30 karakter</small>
+                            <input asp-for="Id" class="form-control" placeholder="Masukkan ID karyawan" maxlength="30" 
+                                   readonly="@(!isNewEmployee)" />
+                            <small class="form-text text-muted">Maksimal 30 karakter</small> <br />
                             <span asp-validation-for="Id" class="text-danger"></span>
                         </div>
 
@@ -37,25 +37,19 @@
                         <div class="mb-3">
                             <label asp-for="JoinDate" class="form-label">Tanggal Masuk Kerja</label>
                             <input asp-for="JoinDate" class="form-control" type="date"
-                                value="@(Model.JoinDate == default(DateTime) ? "2020-01-01" : Model.JoinDate.ToString("yyyy-MM-dd"))"
-                                placeholder="Pilih tanggal masuk kerja" />
+                                value="@(Model.JoinDate == default(DateTime) ? "2020-01-01" : Model.JoinDate.ToString("yyyy-MM-dd"))" />
                             <span asp-validation-for="JoinDate" class="text-danger"></span>
                         </div>
 
                         <div class="mb-3">
                             <label asp-for="Age" class="form-label">Usia</label>
-                            <input asp-for="Age" class="form-control" type="number" min="18" max="65"
-                                placeholder="Masukkan usia (18-65)" />
+                            <input asp-for="Age" class="form-control" type="number" min="18" max="65" placeholder="Masukkan usia (18-65)" />
                             <span asp-validation-for="Age" class="text-danger"></span>
                         </div>
 
                         <div class="d-flex justify-content-between mt-4">
-                            <a asp-action="Index" class="btn btn-secondary">
-                                <i class="bi bi-arrow-left"></i> Kembali
-                            </a>
-                            <button type="submit" class="btn btn-success">
-                                <i class="bi bi-save"></i> Simpan
-                            </button>
+                            <a asp-action="Index" class="btn btn-secondary"><i class="bi bi-arrow-left"></i> Kembali</a>
+                            <button type="submit" class="btn btn-success"><i class="bi bi-save"></i> Simpan</button>
                         </div>
                     </form>
                 </div>
@@ -65,49 +59,40 @@
 </div>
 
 @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
 
     <script>
         $(document).ready(function () {
-            // Additional client-side validation
             $('#employeeForm').submit(function (e) {
+                const fields = [
+                    { id: 'Id', message: 'ID karyawan harus diisi', maxLength: 30 },
+                    { id: 'Name', message: 'Nama karyawan harus diisi' },
+                    { id: 'JoinDate', message: 'Tanggal masuk kerja harus diisi' },
+                    { id: 'Age', message: 'Usia harus diisi', min: 18, max: 65 }
+                ];
+                
                 let isValid = true;
-                const id = $('#Id').val().trim();
-                const name = $('#Name').val().trim();
-                const joinDate = $('#JoinDate').val();
-                const age = $('#Age').val();
-
-                if (!id) {
-                    $('#Id').next('.text-danger').text('ID karyawan harus diisi');
-                    isValid = false;
-                } else if (id.length > 30) { // Match this to your DB column size
-                    $('#Id').next('.text-danger').text('ID karyawan maksimal 30 karakter');
-                    isValid = false;
-                }
-
-                if (!name) {
-                    $('#Name').next('.text-danger').text('Nama karyawan harus diisi');
-                    isValid = false;
-                }
-
-                if (!joinDate) {
-                    $('#JoinDate').next('.text-danger').text('Tanggal masuk kerja harus diisi');
-                    isValid = false;
-                }
-
-                if (!age) {
-                    $('#Age').next('.text-danger').text('Usia harus diisi');
-                    isValid = false;
-                } else if (age < 18 || age > 65) {
-                    $('#Age').next('.text-danger').text('Usia harus antara 18 dan 65 tahun');
-                    isValid = false;
-                }
-
-                if (!isValid) {
-                    e.preventDefault();
-                }
+                
+                fields.forEach(field => {
+                    const $field = $('#' + field.id);
+                    const value = $field.val().trim();
+                    const $error = $field.next('.text-danger');
+                    
+                    if (!value) {
+                        $error.text(field.message);
+                        isValid = false;
+                    } else if (field.maxLength && value.length > field.maxLength) {
+                        $error.text(`${field.id} maksimal ${field.maxLength} karakter`);
+                        isValid = false;
+                    } else if (field.min && (parseInt(value) < field.min || parseInt(value) > field.max)) {
+                        $error.text(`Usia harus antara ${field.min} dan ${field.max} tahun`);
+                        isValid = false;
+                    } else {
+                        $error.text('');
+                    }
+                });
+                
+                if (!isValid) e.preventDefault();
             });
         });
     </script>
